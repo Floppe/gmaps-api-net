@@ -31,8 +31,8 @@ namespace Google.Maps.Geocoding
 	{
 		#region Http/Https Uris and Constructors
 
-		public static readonly Uri HttpsUri = new Uri("https://maps.google.com/maps/api/geocode/");
-		public static readonly Uri HttpUri = new Uri("http://maps.google.com/maps/api/geocode/");
+		public static readonly Uri HttpsUri = new Uri("https://maps.googleapis.com/maps/api/geocode/");
+		public static readonly Uri HttpUri = new Uri("http://maps.googleapis.com/maps/api/geocode/");
 
 		public Uri BaseUri { get; set; }
 

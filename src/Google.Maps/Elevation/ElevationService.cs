@@ -31,12 +31,12 @@ namespace Google.Maps.Elevation
 	{
 		#region Http/Https Uris and Constructors
 
-		public static readonly Uri HttpsUri = new Uri("https://maps.google.com/maps/api/elevation/");
-		public static readonly Uri HttpUri = new Uri("http://maps.google.com/maps/api/elevation/");
+		public static readonly Uri HttpsUri = new Uri("https://maps.googleapis.com/maps/api/elevation/");
+		public static readonly Uri HttpUri = new Uri("http://maps.googleapis.com/maps/api/elevation/");
 
 		public Uri BaseUri { get; set; }
 
-		public ElevationService() : this(HttpUri)
+		public ElevationService() : this(HttpsUri)
 		{
 		}
 		public ElevationService(Uri baseUri)

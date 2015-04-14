@@ -31,12 +31,12 @@ namespace Google.Maps.Direction
 	{
 		#region Http/Https Uris and Constructors
 
-		public static readonly Uri HttpsUri = new Uri("https://maps.google.com/maps/api/directions/");
-		public static readonly Uri HttpUri = new Uri("http://maps.google.com/maps/api/directions/");
+		public static readonly Uri HttpsUri = new Uri("https://maps.googleapis.com/maps/api/directions/");
+		public static readonly Uri HttpUri = new Uri("http://maps.googleapis.com/maps/api/directions/");
 
 		public Uri BaseUri { get; set; }
 
-		public DirectionService() : this(HttpUri)
+		public DirectionService() : this(HttpsUri)
 		{
 		}
 		public DirectionService(Uri baseUri)

@@ -31,12 +31,12 @@ namespace Google.Maps.DistanceMatrix
 	{
 		#region Http/Https Uris and Constructors
 
-		public static readonly Uri HttpsUri = new Uri("https://maps.google.com/maps/api/distancematrix/");
-		public static readonly Uri HttpUri = new Uri("http://maps.google.com/maps/api/distancematrix/");
+		public static readonly Uri HttpsUri = new Uri("https://maps.googleapis.com/maps/api/distancematrix/");
+		public static readonly Uri HttpUri = new Uri("http://maps.googleapis.com/maps/api/distancematrix/");
 
 		public Uri BaseUri { get; set; }
 
-		public DistanceMatrixService() : this(HttpUri)
+		public DistanceMatrixService() : this(HttpsUri)
 		{
 		}
 		public DistanceMatrixService(Uri baseUri)
